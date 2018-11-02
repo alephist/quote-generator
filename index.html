@@ -20,18 +20,7 @@
       <div class="container">
         <h1 class="title has-text-centered">Random Quote Generator</h1>
 
-        <div class="card" v-if="quoteList.length">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Category: {{ quoteCategory }}</p>
-          </div>
-          <div class="card-content">
-            <p class="title is-size-4">"{{ quoteTitle }}"</p>
-            <p class="subtitle has-text-right">- {{ quoteAuthor }}</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="card-footer-item" @click="changeQuote">Get Quote</a>
-          </div>
-        </div>
+        <quote-card :list="quoteList"></quote-card>
       </div>
     </div>
   </div>
